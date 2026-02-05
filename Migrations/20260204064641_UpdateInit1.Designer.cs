@@ -4,6 +4,7 @@ using LMS.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LMS.Migrations
 {
     [DbContext(typeof(LDbContext))]
-    partial class LDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260204064641_UpdateInit1")]
+    partial class UpdateInit1
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -74,7 +77,7 @@ namespace LMS.Migrations
                             BookId = 1,
                             Author = "Andrew Hunt and David Thomas",
                             CategoryId = 5,
-                            CoverImagePath = "~/covers/b7.jpg",
+                            CoverImagePath = "~/cover/b7.jpg",
                             ISBN = "978-0201616224",
                             IsAvaiable = true,
                             IsAvailable = true,
@@ -123,7 +126,7 @@ namespace LMS.Migrations
                             BookId = 5,
                             Author = "Robert C. Martin",
                             CategoryId = 5,
-                            CoverImagePath = "~/covers/b6.jpg",
+                            CoverImagePath = "~/cover/b6.jpg",
                             ISBN = "978-0132350884",
                             IsAvaiable = true,
                             IsAvailable = true,
@@ -136,7 +139,7 @@ namespace LMS.Migrations
                             BookId = 6,
                             Author = "Martin Fowler",
                             CategoryId = 5,
-                            CoverImagePath = "~/covers/b5.jpg",
+                            CoverImagePath = "~/cover/b5.jpg",
                             ISBN = "978-0201485677",
                             IsAvaiable = true,
                             IsAvailable = true,
@@ -149,7 +152,7 @@ namespace LMS.Migrations
                             BookId = 7,
                             Author = "Eric Freeman",
                             CategoryId = 5,
-                            CoverImagePath = "~/covers/b4.jpg",
+                            CoverImagePath = "~/cover/b4.jpg",
                             ISBN = "978-0596007126",
                             IsAvaiable = true,
                             IsAvailable = true,
@@ -162,7 +165,7 @@ namespace LMS.Migrations
                             BookId = 8,
                             Author = "Jon Skeet",
                             CategoryId = 5,
-                            CoverImagePath = "~/covers/b1.jpg",
+                            CoverImagePath = "~/cover/b1.jpg",
                             ISBN = "978-1617294532",
                             IsAvaiable = true,
                             IsAvailable = true,
@@ -175,7 +178,7 @@ namespace LMS.Migrations
                             BookId = 9,
                             Author = "Adam Freeman",
                             CategoryId = 5,
-                            CoverImagePath = "~/covers/b2.jpg",
+                            CoverImagePath = "~/cover/b2.jpg",
                             ISBN = "978-1484254394",
                             IsAvaiable = true,
                             IsAvailable = true,
@@ -188,7 +191,7 @@ namespace LMS.Migrations
                             BookId = 10,
                             Author = "Kyle Simpson",
                             CategoryId = 5,
-                            CoverImagePath = "~/covers/b3.jpg",
+                            CoverImagePath = "~/cover/b3.jpg",
                             ISBN = "978-1491904244",
                             IsAvaiable = true,
                             IsAvailable = true,
